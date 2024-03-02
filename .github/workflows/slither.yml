@@ -30,8 +30,7 @@ jobs:
           slither-config: packages/contracts-bedrock/slither.config.json
           fail-on: config
           sarif: results.sarif
-          # https://github.com/crytic/slither-action/issues/70#issuecomment-1932948435
-          slither-version: dev-triage-db
+          slither-version: master
           slither-args: --triage-database packages/contracts-bedrock/slither.db.json
 
       - name: Upload SARIF file
